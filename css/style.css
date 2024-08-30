@@ -21,6 +21,12 @@ h5{
     color: #ffdf00;
 }
 
+.img{
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+}
+
 .contacto-container{
     display: flex;
     flex-direction: row;
@@ -43,6 +49,8 @@ h5{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border: 1px solid #ffdf00;
+    margin: 1%;
 }
 
 .titulo{
@@ -58,6 +66,10 @@ h5{
 main{
     display: flex;
     flex-direction: row;
+}
+
+.menu-container{
+    margin: 1%;
 }
 
 .menu{
@@ -78,18 +90,61 @@ main{
     display: flex;
     flex-direction: column;
     margin: 1%;
+    width: 82%;
 }
 
 .destacado-img{
     display: grid;
-    grid-template-rows: repeat(4, 150px);
-    grid-template-columns: repeat(4,150px);
+    grid-template-rows: repeat(2, 300px);
+    grid-template-columns: repeat(4,300px);
 }
 
 .destacado-item{
-    border: 1px solid #ffdf00;
+    border: 5px solid #ffdf00;
+    margin: 1%;
 }
 
+.bici-todo{
+    display: grid;
+    grid-template-columns: repeat(4, 50fr);
+    grid-template-rows: repeat(4,50fr);
+    margin: 1%;
+}
+
+.bici-item img{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border: 1px solid #ffdf00;
+    margin: 1%;
+}
+
+.categoria-fixed{
+    position:absolute;
+    right: 10px;
+    top: 160px;
+    color: #ffdf00;
+}
+
+option{
+    background-color: #efd100;
+    color: black;
+}
+
+.pedido-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #ffdf00;
+    width: 360%;
+    justify-content: space-between;
+    margin: 1%;
+}
+
+.img-contacto{
+    width: 100%;
+    height: 22px;
+}
 
 
 
