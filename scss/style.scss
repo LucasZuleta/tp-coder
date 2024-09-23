@@ -1,183 +1,114 @@
+//GoogleFonts
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Permanent+Marker&display=swap');
+
+//Fin GoogleFonts
+
+//Etiquetas Generales
+
 *{
     margin: 0;
     padding: 0;
-}
-
-a{
-    color: #ffdf00;
-    text-decoration: none;
-}
-
-p{
-    color: #ffdf00;
-    text-decoration: none;
-}
-
-h4{
-    color: #ffdf00;
-}
-
-h5{
-    color: #ffdf00;
+    box-sizing: border-box;
 }
 
 body{
-    font-family: "Amatic SC", sans-serif;
-}
-
-// HEADER
-
-.contacto-container{
-    display: flex;
-    flex-direction: row;
-    gap: 5%;
     color: #ffdf00;
-    justify-content: center;
-    align-items: center;
-    margin: 1%;
 }
 
-.instagram{
+h1,h2,h3,h4,h5,p{
+    font-family: "Amatic SC", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p,a{
+    color: #ffdf00;
+    text-decoration: none;
+}
+
+//Fin etiquetas generales
+
+//Header
+
+.nav-item{
     display: flex;
     flex-direction: row;
-    gap: 5%;
     align-items: center;
-    height: 100%;
 }
 
-.whatsapp{
-    display: flex;
-    flex-direction: row;
-    gap: 5%;
-    align-items: center;
-    height: 100%;
-}
-
-.img-contacto{
+.nav-item img{
     width: 22px;
     height: 22px;
 }
 
-.titulo-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border: 1px solid #ffdf00;
-    margin: 1%;
-    background-color: #36300a;
+.carousel-inner,
+.carousel-item{
+    width: 100%;
+    height: 300px;
 }
 
-.titulo{
-    margin: 1%;
+@media (max-width:600px){
+    .carousel-inner,
+    .carousel-item{
+        height: 100%;
+    }
 }
 
-.login-carrito-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: end;
-    padding: 1%;
-    gap: 5%;
-}
-
-
-// FIN HEADER
-
-// MAIN
-
-
-main{
-    display: flex;
-    flex-direction: row;
-}
-
-.menu-container{
-    margin: 1%;
-    display: grid;
-    grid-template-columns: repeat(1, 250px);
-    grid-template-rows: repeat(4, 80px);
-    font-size: x-large;
-    background-color: #36300a;
-    height: 100%;
-}
-
-.menu-item{
-    display: flex;
-    border: 1px solid #ffdf00;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
- 
-.menu-item-palabra{
-    display: block;
+.carousel-item{
     width: 100%;
     height: 100%;
-    text-align: center;
-}
-
-.menu-item-palabra h3{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu-item:hover{
-    background-color: rgba(128, 128, 128, 0.219);
-}
-
-.menu-item h3:hover{
-    font-size: 50px;
+    object-fit: cover;
 }
 
 .destacado-container{
     display: flex;
     flex-direction: column;
-    margin: 1%;
-    width: 82%;
-}
-
-.destacado-container h3{
-    color: #ffdf00;
-}
-
-.destacado{
-    display: grid;
-    grid-template-rows: repeat(2, 300fr);
-    grid-template-columns: repeat(4,300fr);
+    padding: 5px;
+    margin: 5px;
 }
 
 .destacado-item{
-    border: 5px solid #ffdf00;
-    margin: 1%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    background-color: #ffdf00;
+    color: black;
+    border: 2px ridge #ffdf00;
+    padding: 0;
+}
+
+.destacado-item div{
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #36300a;
-}
-
-.destacado-img{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.destacado-img img{
-    height: 80%;
-    width: 80%;
-}
-
-.destacado-img img:hover{
-    height: 100%;
+    gap: 10px;
     width: 100%;
 }
 
+.destacado-item img{
+    width: 100%;
+    height: 300px;
+    object-fit: scale-down;
+}
 
+.destacado-item div a{
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: #ffdf00;
+}
 
+.row{
+    margin: 0;
+    padding: 0;
+}
+
+.footer{
+    background-color: #ffdf00;
+    color: black;
+    text-align: center;
+}
 

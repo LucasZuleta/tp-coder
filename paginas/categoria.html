@@ -6,109 +6,67 @@
         <title>BikeStore | Categorias</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Permanent+Marker&display=swap" rel="stylesheet">
-        
         
     </head>
     <body class="bg-dark">
-        <header class="header-container">
-            <section class="contacto-container">
-                <div class="instagram">
-                    <div>
-                        <img src="../imagenes/instagram-logo.png" alt="instagram-logo" class="img-contacto">
-                    </div>
-                    <div>
-                        <h4>
-                            <a href="../paginas/nav/contacto/instagram.html">@bikestore</a>
-                        </h4>
-                    </div>
-                </div>
-
-                <div class="whatsapp">
-                    <div>
-                        <img src="../imagenes/whatsapp-logo.png" alt="whatsapp-logo" class="img-contacto">
-                    </div>
-                    <div>
-                        <h4>
-                            <a href="../paginas/nav/contacto/whatsapp.html"">35139242875</a>
-                        </h4>
-                    </div>
-                </div>
-            </section>
-
-
-            <section class="titulo-container">
-                <div class="titulo">
+        <header>
+            <nav class="navbar bg-warning navbar-expand-md sticky-top top-0">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html">
                     <h1>
-                        <a href="../index.html">BIKESTORE</a>
+                        BIKESTORE
                     </h1>
+                </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BIKESTORE</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body flex-column">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <div class="nav-item">
+                                <img src="../imagenes/instagram-logo.png" alt="instagram-logo">
+                                <a class="nav-link" href="../paginas/nav/contacto/instagram.html">Instagram</a>
+                            </div>
+                            <div class="nav-item">
+                                <img src="../imagenes/whatsapp-logo.png" alt="whatsapp-logo">
+                                <a class="nav-link" href="../paginas/nav/contacto/whatsapp.html">WhatsApp</a>
+                            </div>
+                        </ul>
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/categoria.html">Categorias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/pedidos.html"> Tus Pedidos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/sponsors.html">Sponsors</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../paginas/tu_cuenta.html">Tu Cuenta</a>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
                 </div>
-
-                <div class="login-carrito-container">
-                    <div class="login">
-                        <h4>
-                            <a href="../paginas/login.html"">Login</a>
-                        </h4>
-                    </div>
-
-                    <div class="palito">
-                        <h4>
-                            |
-                        </h4>
-                    </div>
-
-                    <div class="carrito">
-                        <h4>
-                            <a href="../paginas/carrito.html">Carrito</a>
-                        </h4>
-                    </div>
-                </div>
-            </section>
+              </nav>
         </header>
 
         <main>
-            <section class="menu-container">
-                <div class="menu">
-                    <div class="menu-item">
-                        <a href="./categoria.html">
-                            <h3>
-                                Categoria
-                            </h3>
-                        </a>
-                    </div>
-                    <div class="menu-item">
-                        <a href="../paginas/pedidos.html">
-                            <h3>
-                                Pedidos
-                            </h3>
-                        </a>
-                    </div>
-                    <div class="menu-item">
-                        <a href="../paginas/sponsors.html">
-                            <h3>
-                                Sponsors
-                            </h3>
-                        </a>
-                    </div>
-                    <div class="menu-item">
-                        <a href="../paginas/tu_cuenta.html">
-                            <h3>
-                                Tu cuenta
-                            </h3>
-                        </a>
-                    </div>
-                </div>
-            </section>
-        
-            <section class="bici-container">
-                <div class="categoria-fixed">
+            <section class="categoria-container">
+                <div class="categoria">
                     <label for="filtro">
-                        Filtro
+                        <h2>Filtro</h2>
                     </label>
                     <select name="filtro" id="filtro">
-                        <option value="seleccionar" disabled selected>Seleciona una opcion</option>
+                        <option value="seleccionar" disabled selected><h3>Seleciona una opcion</h3></option>
                         <option value="bmx">BMX</option>
                         <option value="montaña">Montaña</option>
                         <option value="calle">Calle</option>
@@ -117,201 +75,251 @@
                         <option value="electrica">Electrica</option>
                     </select>
                 </div>
-                <div class="bici-todo">
-                    <div class="bici-item">
-                        <div>
-                            <img src="../imagenes/bici-1.png" alt="bici-1">
-                        </div>
-                        <div>
-                            <h5>
-                                Descripcion del producto
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="bici-item">
-                        <div>
-                            <img src="../imagenes/bici-1.png" alt="bici-1">
-                        </div>
-                        <div>
-                            <h5>
-                                Descripcion del producto
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="bici-item">
-                        <div>
-                            <img src="../imagenes/bici-1.png" alt="bici-1">
-                        </div>
-                        <div>
-                            <h5>
-                                Descripcion del producto
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="bici-item">
-                        <div>
-                            <img src="../imagenes/bici-1.png" alt="bici-1">
-                        </div>
-                        <div>
-                            <h5>
-                                Descripcion del producto
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="bici-item">
-                        <div>
-                            <img src="../imagenes/bici-1.png" alt="bici-1">
-                        </div>
-                        <div>
-                            <h5>
-                                Descripcion del producto
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="bici-item">
-                        <div>
-                            <img src="../imagenes/bici-1.png" alt="bici-1">
-                        </div>
-                        <div>
-                            <h5>
-                                Descripcion del producto
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="bici-item">
-                        <div>
-                            <img src="../imagenes/bici-1.png" alt="bici-1">
-                        </div>
-                        <div>
-                            <h5>
-                                Descripcion del producto
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="bici-item">
-                        <div>
-                            <img src="../imagenes/bici-1.png" alt="bici-1">
-                        </div>
-                        <div>
-                            <h5>
-                                Descripcion del producto
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="bici-item">
-                        <div>
-                            <img src="../imagenes/bici-1.png" alt="bici-1">
-                        </div>
-                        <div>
-                            <h5>
-                                Descripcion del producto
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="bici-item">
-                        <div>
-                            <img src="../imagenes/bici-1.png" alt="bici-1">
-                        </div>
-                        <div>
-                            <h5>
-                                Descripcion del producto
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="bici-item">
-                        <div>
-                            <img src="../imagenes/bici-1.png" alt="bici-1">
-                        </div>
-                        <div>
-                            <h5>
-                                Descripcion del producto
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="bici-item">
-                        <div>
-                            <img src="../imagenes/bici-1.png" alt="bici-1">
-                        </div>
-                        <div>
-                            <h5>
-                                Descripcion del producto
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="bici-item">
-                        <div>
-                            <img src="../imagenes/bici-1.png" alt="bici-1">
-                        </div>
-                        <div>
-                            <h5>
-                                Descripcion del producto
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="bici-item">
-                        <div>
-                            <img src="../imagenes/bici-1.png" alt="bici-1">
-                        </div>
-                        <div>
-                            <h5>
-                                Descripcion del producto
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="bici-item">
-                        <div>
-                            <img src="../imagenes/bici-1.png" alt="bici-1">
-                        </div>
-                        <div>
-                            <h5>
-                                Descripcion del producto
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="bici-item">
-                        <div>
-                            <img src="../imagenes/bici-1.png" alt="bici-1">
-                        </div>
-                        <div>
-                            <h5>
-                                Descripcion del producto
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="bici-item">
-                        <div>
-                            <img src="../imagenes/bici-1.png" alt="bici-1">
-                        </div>
-                        <div>
-                            <h5>
-                                Descripcion del producto
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="bici-item">
-                        <div>
-                            <img src="../imagenes/bici-1.png" alt="bici-1">
-                        </div>
-                        <div>
-                            <h5>
-                                Descripcion del producto
-                            </h5>
-                        </div>
-                    </div>
-                    <div class="bici-item">
-                        <div>
-                            <img src="../imagenes/bici-1.png" alt="bici-1">
-                        </div>
-                        <div>
-                            <h5>
-                                Descripcion del producto
-                            </h5>
-                        </div>
-                    </div>
+                <div class="todas-las-bicis">
+                    <section class="row">
+                        <article class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="destacado-item">
+                                <img src="../imagenes/bmx-1.jpg" alt="bici-1">
+                                <div>
+                                    <h5>
+                                        BMX Asfalto
+                                    </h5>
+                                    <h5>
+                                        $300.000
+                                    </h5>
+                                    <a href="">Ver mas</a>
+                                </div>
+                            </div>
+                        </article>
 
+                        <article class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="destacado-item">
+                                <img src="../imagenes/bmx-2.png" alt="bici-1">
+                                <div>
+                                    <h5>
+                                        BMX PRIMO
+                                    </h5>
+                                    <h5>
+                                        $200.000
+                                    </h5>
+                                    <a href="">Ver mas</a>
+                                </div>
+                            </div>
+                        </article>
 
+                        <article class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="destacado-item">
+                                <img src="../imagenes/bmx-3.jpg" alt="bici-1">
+                                <div>
+                                    <h5>
+                                        BMX Asfalto
+                                    </h5>
+                                    <h5>
+                                        $350.000
+                                    </h5>
+                                    <a href="">Ver mas</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="destacado-item">
+                                <img src="../imagenes/montaña-1.jpg" alt="bici-1">
+                                <div>
+                                    <h5>
+                                        MountainBike rodado 29
+                                    </h5>
+                                    <h5>
+                                        $750.000
+                                    </h5>
+                                    <a href="">Ver mas</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="destacado-item">
+                                <img src="../imagenes/montaña-2.jpg" alt="bici-1">
+                                <div>
+                                    <h5>
+                                        MountainBike rodado 28
+                                    </h5>
+                                    <h5>
+                                        $600.000
+                                    </h5>
+                                    <a href="">Ver mas</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="destacado-item">
+                                <img src="../imagenes/montaña-3.jpg" alt="bici-1">
+                                <div>
+                                    <h5>
+                                        MountainBike rodado 29
+                                    </h5>
+                                    <h5>
+                                        $900.000
+                                    </h5>
+                                    <a href="">Ver mas</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="destacado-item">
+                                <img src="../imagenes/calle-1.jpg" alt="bici-1">
+                                <div>
+                                    <h5>
+                                        Tomaselli 
+                                    </h5>
+                                    <h5>
+                                        $400.000
+                                    </h5>
+                                    <a href="">Ver mas</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="destacado-item">
+                                <img src="../imagenes/calle-2.jpg" alt="bici-1">
+                                <div>
+                                    <h5>
+                                        OXEA 
+                                    </h5>
+                                    <h5>
+                                        $550.000
+                                    </h5>
+                                    <a href="">Ver mas</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="destacado-item">
+                                <img src="../imagenes/calle-3.jpg" alt="bici-1">
+                                <div>
+                                    <h5>
+                                        Specialized
+                                    </h5>
+                                    <h5>
+                                        $950.000
+                                    </h5>
+                                    <a href="">Ver mas</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="destacado-item">
+                                <img src="../imagenes/niños-1.jpg" alt="bici-1">
+                                <div>
+                                    <h5>
+                                        Tomaselli 
+                                    </h5>
+                                    <h5>
+                                        $200.000
+                                    </h5>
+                                    <a href="">Ver mas</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="destacado-item">
+                                <img src="../imagenes/niños-2.jpg" alt="bici-1">
+                                <div>
+                                    <h5>
+                                        TopMega
+                                    </h5>
+                                    <h5>
+                                        $300.000
+                                    </h5>
+                                    <a href="">Ver mas</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="destacado-item">
+                                <img src="../imagenes/niños-3.jpg" alt="bici-1">
+                                <div>
+                                    <h5>
+                                        Venzo
+                                    </h5>
+                                    <h5>
+                                        $450.000
+                                    </h5>
+                                    <a href="">Ver mas</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="destacado-item">
+                                <img src="../imagenes/compe-1.jpg" alt="bici-1">
+                                <div>
+                                    <h5>
+                                        Scott
+                                    </h5>
+                                    <h5>
+                                        $1.300.000
+                                    </h5>
+                                    <a href="">Ver mas</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="destacado-item">
+                                <img src="../imagenes/compe-2.jpg" alt="bici-1">
+                                <div>
+                                    <h5>
+                                        Specialized
+                                    </h5>
+                                    <h5>
+                                        $1.500.000
+                                    </h5>
+                                    <a href="">Ver mas</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="destacado-item">
+                                <img src="../imagenes/compe-3.jpg" alt="bici-1">
+                                <div>
+                                    <h5>
+                                        TopMega
+                                    </h5>
+                                    <h5>
+                                        $1.250.000
+                                    </h5>
+                                    <a href="">Ver mas</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="destacado-item">
+                                <img src="../imagenes/electrica-1.jpg" alt="bici-1">
+                                <div>
+                                    <h5>
+                                        E-Bike
+                                    </h5>
+                                    <h5>
+                                        $1.000.000
+                                    </h5>
+                                    <a href="">Ver mas</a>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
                 </div>
             </section>
+
         </main>
 
 
